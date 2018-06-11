@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp">
+
+    <TextView
+        android:id="@+id/gov_holiday_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/day"
+        android:gravity="center"
+        android:text="班"
+        android:textSize="10sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="26"
+        android:textColor="@color/black"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/subday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="初一"
+        android:textSize="11sp" />
+
+</LinearLayout>

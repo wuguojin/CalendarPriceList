@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.huicent.library.loadwidget.AVLoadingIndicatorView
+                android:id="@+id/av1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:indicatorColor="@color/colorAccent" />
+                
+            <com.huicent.library.loadwidget.AVLoadingIndicatorView
+                android:id="@+id/av2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:indicatorColor="@color/colorAccent"
+                app:indicatorName="BallClipRotatePulseIndicator" />
+
+            <com.huicent.library.loadwidget.AVLoadingIndicatorView
+                android:id="@+id/av3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:indicatorColor="@color/colorAccent"
+                app:indicatorName="BallScaleMultipleIndicator" />
+
+            <com.huicent.library.loadwidget.AVLoadingIndicatorView
+                android:id="@+id/av4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:indicatorColor="@color/colorAccent"
+                app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+            <com.huicent.library.loadwidget.AVLoadingIndicatorView
+                android:id="@+id/av5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:indicatorColor="@color/colorAccent"
+                app:indicatorName="BallTrianglePathIndicator" />
+
+            <com.huicent.library.loadwidget.AVLoadingIndicatorView
+                android:id="@+id/av6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:indicatorColor="@color/colorAccent"
+                app:indicatorName="BallZigZagIndicator" />
+
+            <com.huicent.library.loadwidget.AVLoadingIndicatorView
+                android:id="@+id/av7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:indicatorColor="@color/colorAccent"
+                app:indicatorName="LineScaleIndicator" />
+
+            <com.huicent.library.loadwidget.AVLoadingIndicatorView
+                android:id="@+id/av8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:indicatorColor="@color/colorAccent"
+                app:indicatorName="LineScalePartyIndicator" />
+
+            <com.huicent.library.loadwidget.AVLoadingIndicatorView
+                android:id="@+id/av9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:indicatorColor="@color/colorAccent"
+                app:indicatorName="LineSpinFadeLoaderIndicator" />
+
+            <com.huicent.library.loadwidget.AVLoadingIndicatorView
+                android:id="@+id/av10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:indicatorColor="@color/colorAccent"
+                app:indicatorName="PacmanIndicator" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
