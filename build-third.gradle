@@ -4,5 +4,5 @@ dependencies {
     implementation "com.android.support:appcompat-v7:${android_support_library_version}"
     implementation "com.android.support:design:${android_support_library_version}"
     implementation "com.android.support:support-v4:${android_support_library_version}"
-    implementation 'com.redapplenet:HuicentCoreLibrary:1.0.4-rc1' //核心库sdk
+    implementation 'com.redapplenet:HuicentCoreLibrary:1.0.5-rc2' //核心库sdk
 }

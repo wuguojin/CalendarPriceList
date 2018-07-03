@@ -1,20 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/week_layout"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/base_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:gravity="center"
-        android:orientation="horizontal" />
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/ToolbarTheme">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_calendar"
+        <TextView
+            android:id="@+id/bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="标题"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/progress_ll"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </android.support.v7.widget.RecyclerView>
+        <com.huicent.library.loadwidget.AVLoadingIndicatorView
+            android:id="@+id/av_loading_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:indicatorColor="@color/colorAccent"
+            app:indicatorName="BallSpinFadeLoaderIndicator"
+            app:maxHeight="54dp"
+            app:maxWidth="54dp"
+            app:minHeight="54dp"
+            app:minWidth="54dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/round_trip_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/white"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="fixed">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/dep_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去程" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/back_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返程" />
+
+        </android.support.design.widget.TabLayout>
+
+        <LinearLayout
+            android:id="@+id/week_layout"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
 </LinearLayout>
