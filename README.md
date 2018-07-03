@@ -36,4 +36,4 @@
 
 ![效果图](https://github.com/wuguojin/CalendarPriceList/blob/master/device-2018-07-03-160102.png?raw=true)
 
-![效果图](https://github.com/wuguojin/CalendarPriceList/blob/master/device-2018-07-03-160123.pngraw=true)
+![效果图](https://github.com/wuguojin/CalendarPriceList/blob/master/device-2018-07-03-160123.png?raw=true)
